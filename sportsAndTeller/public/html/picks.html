@@ -1,9 +1,11 @@
+<h1>{{rCtrl.games.name}}</h1>
+
 <div class="container">
 
   <div class="row">
   
       <div class="col-xs-12">
-         Our Peeps : 
+         Make your Picks : 
 
          <ul>
           <li ng-repeat="viking in lh.vikings">
@@ -16,3 +18,6 @@
   </div>
 
 </div>
+<ul>
+  <li ng-repeat="user in rCtrl.GamesUsers">{{user.firstName}}</li>
+</ul>
