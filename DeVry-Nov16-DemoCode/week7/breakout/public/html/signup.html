@@ -1,0 +1,47 @@
+<div class="container">
+
+   <div class="row">
+  
+      <div class="col-xs-12">
+     
+        <form ng-submit="lh.submitViking()">
+          <input class="form-control" placeholder="firstName" ng-model="lh.newViking.firstName" >
+          <input class="form-control" placeholder="lastName" ng-model="lh.newViking.lastName" >
+          <select class="form-control" placeholder="favoriteWeapon" ng-model="lh.newViking.favoriteWeapon" >
+            <option value="" selected disabled>Pick a Weapon</option>
+            <option value="axe">Axe</option>
+            <option value="sword">Sword</option>
+            <option value="maul">Maul</option>
+
+
+          </select>
+          <input class="form-control" placeholder="berserker" type="checkbox" ng-model="lh.newViking.berserker" >
+          <select class="form-control" placeholder="favoriteGod" ng-model="lh.newViking.favoriteGod" >
+            <option value="" selected disabled>Pick a God</option>
+            <option value="odin">Odin</option>
+            <option value="thor">Thor</option>
+            <option value="loki">Loki</option>
+            <option value="freya">Freya</option>
+          </select>
+          
+<!--   ngOptions => VALUE as DISPLAY for OBJ in LIST -->
+          
+          <select 
+             class="form-control" 
+             ng-model="lh.newViking.region"
+             ng-options="region._id as region.name for region in lh.regionList"     
+             >
+            <option value="" selected disabled>From where do you hail?</option>
+          </select>
+          
+          
+          <button class="btn btn-warning" type="submit">Make it!</button>
+          
+        </form>
+        
+      </div>
+     
+  </div>
+
+
+</div>

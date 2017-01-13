@@ -1,0 +1,18 @@
+<div class="container">
+
+  <div class="row">
+  
+      <div class="col-xs-12">
+         Our Peeps : 
+
+         <ul>
+          <li ng-repeat="viking in lh.vikings">
+            <a href="/profiles/{{viking._id}}">{{viking.firstName}}  {{viking.lastName}} || {{viking.region.name}}</a>
+           </li>
+        </ul>
+    
+      </div>
+  
+  </div>
+
+</div>

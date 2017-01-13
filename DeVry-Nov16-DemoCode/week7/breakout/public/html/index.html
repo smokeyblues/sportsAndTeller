@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html ng-app="Valhalla" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="/"></base>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
+  
+  <title> Welcome to Valhalla! </title>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
+  
+  <script src="/js/module.valhalla.js"></script>
+  <script src="/js/controller.longhouse.js"></script>
+  <script src="/js/controller.profile.js"></script>
+  <script src="/js/controller.region.js"></script>
+
+
+
+</head>
+<body>
+    
+  <div class="clearfix jumbotron">
+    <h1 class="text-center">Welcome to Valhalla</h1>
+    <p class="pull-right">the best social network <br> for vikings in the afterlife</p>
+  </div>
+  
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/signup">Signup</a></li>
+    </ul>
+  </nav>
+  
+  <ng-view></ng-view>
+  
+  
+  
+<!--     <ng-include src="'/html/about.html'"></ng-include> -->
+</body>
+</html>

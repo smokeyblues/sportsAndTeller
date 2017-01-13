@@ -1,0 +1,26 @@
+<h1 class="text-center">
+  {{pCtrl.viking.firstName}} {{pCtrl.viking.lastName}}
+</h1>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-xs-6">
+      Weapon : {{pCtrl.viking.favoriteWeapon}}
+    </div>
+    <div class="col-xs-6">
+      God : {{pCtrl.viking.favoriteGod}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-6">
+      Berserker : {{pCtrl.viking.berserker}}
+    </div>
+    <div class="col-xs-6">
+      Region : <a href="/regions/{{pCtrl.viking.region._id}}">{{pCtrl.viking.region.name}}</a>
+      <ul>
+        <li ng-repeat="activity in pCtrl.viking.region.culture">{{activity}}</li>
+      </ul>
+    </div>
+  </div>
+</div>

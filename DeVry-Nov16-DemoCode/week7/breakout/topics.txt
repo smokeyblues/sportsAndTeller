@@ -1,0 +1,19 @@
+Backend - Frontend Hookup
+  - DB
+  - 3rd party API => DB  
+  - FE Routing
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
