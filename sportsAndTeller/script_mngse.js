@@ -95,22 +95,22 @@ var teamsArray = new teams([
 var gamesArray = new games([
   {home :"ATL",
    away : "SEA",
-   start: "2:35PM",
+   start: new Date(2017,1,14,14,35),
    result: False
   },
   {home :"NE",
    away : "HOU",
-   start: "6:15PM",
+   start: new Date(2017,1,14,18,15),
    result: False
   },
   {home :"DAL",
    away : "GB",
-   start: "2:40PM",
+   start: new Date(2017,1,5,14,35),
    result: False
   },
   {home :"KC",
    away : "PIT",
-   start: "6:20PM",
+   start: new Date(2017,1,14,18,20),
    result: False
   }
 ]);
